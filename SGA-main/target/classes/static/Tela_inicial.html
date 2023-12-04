@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Painel do Usuário</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+  <div class="header">
+    <h2>Painel do Usuário</h2>
+  </div>
+  
+  <div class="container">
+    <div class="user-image"></div>
+    <div th:text="${EstudanteLogado}"></div>
+    <div class="menu">
+      <a href="#">Notas</a>
+      <a href="#">Matérias</a>
+      <a href="#">Plano de Aulas</a>
+      <a href="#">Caixa de Sugestões</a>
+      <a href="/perfil">PERFIL</a>
+    </div>
+  </div>
+</body>
+</html>

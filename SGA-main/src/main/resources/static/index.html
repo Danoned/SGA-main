@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta name="Content-Type" content="text/html">
+  <title>SGA - Login</title>
+  <script src ="./js/scriptLogin.js" defer></script>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+
+</head>
+<body>
+  <div class="header">
+    <h2>SGA</h2>
+    <a href = "index.html"> index </a>
+    <a href = "Tela_inicial.html"> tela inicial </a>
+    <a href = "Tela_Secretaria.html"> tela secretaria </a>
+  </div>
+  
+  <div class="container">
+    <form action ="/efetuar_login" method="post" th:object="${usuario}">
+      <div class="form-group">
+        <label for="username">Usuário:</label>
+        <input type="text" id="email" name="email" placeholder="Digite seu usuário">
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" placeholder="Digite sua senha">
+      </div>
+      <button class="submit-btn" type="submit">Enviar</button>
+    </form>
+  </div>
+</body>
+</html>
