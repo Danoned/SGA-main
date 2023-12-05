@@ -48,7 +48,7 @@ public class cursoController {
         return (List<curso>) cursoService.findAll();
     }
 
-    @DeleteMapping("/cursoes/{id}")
+    @DeleteMapping("/cursos/{id}")
     public ResponseEntity<?> deletar(@PathVariable Long id) {
         cursoService.deleteById(id);
         return ResponseEntity.status(204).build();
